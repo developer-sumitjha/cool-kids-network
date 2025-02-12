@@ -9,3 +9,10 @@
 
 // Security check
 defined('ABSPATH') || exit;
+
+// Autoload classes
+require_once plugin_dir_path(__FILE__) . 'includes/class-ckn-roles.php';
+
+
+// Initialize components
+CKN_Roles::register();
