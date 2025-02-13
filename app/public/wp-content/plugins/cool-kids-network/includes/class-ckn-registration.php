@@ -44,19 +44,18 @@ class CKN_Registration
                     update_user_meta($user_id, 'first_name', $name['first']);
                     update_user_meta($user_id, 'last_name', $name['last']);
                     update_user_meta($user_id, 'country', $location['country']);
-
                 }
 
                 // Set default role
                 $user = new WP_User($user_id);
-                $user -> set_role('cool_kid');
+                $user->set_role('cool_kid');
 
                 // Auto Login
                 wp_signon([
                     'user_login' => $username,
                     'user_password' => $password
                 ]);
-                wp_redirect(home_url(''));
+                wp_redirect(home_url('/dashboard'));
                 exit;
             }
         }

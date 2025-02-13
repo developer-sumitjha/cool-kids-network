@@ -6,3 +6,13 @@
 [13-Feb-2025 15:18:40 UTC] PHP Warning:  Array to string conversion in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\includes\class-ckn-registration.php on line 43
 [13-Feb-2025 15:24:24 UTC] PHP Parse error:  syntax error, unexpected identifier "update_user_meta" in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\includes\class-ckn-registration.php on line 44
 [13-Feb-2025 15:34:55 UTC] PHP Parse error:  syntax error, unexpected token "}" in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\includes\class-ckn-registration.php on line 60
+[13-Feb-2025 16:17:16 UTC] PHP Warning:  require_once(D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network/includes/class-ckn-login.php): Failed to open stream: No such file or directory in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\cool-kids-network.php on line 16
+[13-Feb-2025 16:17:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network/includes/class-ckn-login.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\cool-kids-network.php:16
+Stack trace:
+#0 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-settings.php(526): include_once()
+#1 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-config.php(103): require_once('D:\\Nepweb Tech\\...')
+#2 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-load.php(50): require_once('D:\\Nepweb Tech\\...')
+#3 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-admin\admin-ajax.php(22): require_once('D:\\Nepweb Tech\\...')
+#4 {main}
+  thrown in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\cool-kids-network.php on line 16
+[13-Feb-2025 16:19:17 UTC] PHP Parse error:  syntax error, unexpected token "}" in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\includes\class-ckn-login.php on line 12
