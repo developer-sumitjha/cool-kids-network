@@ -1,0 +1,11 @@
+.user-list {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.user-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
