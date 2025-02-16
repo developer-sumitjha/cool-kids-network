@@ -13,8 +13,8 @@ class CKN_Registration
     {
         ob_start();
 ?>
-        <form method="post">
-            <input type="email" name="ckn_email" required>
+        <form method="post" class="ckn-form">
+            <input type="email" name="ckn_email" placeholder="Email Address" required>
             <button type="submit">Confirm</button>
         </form>
 

@@ -136,3 +136,24 @@ Stack trace:
 [15-Feb-2025 13:34:34 UTC] PHP Warning:  Undefined array key "role" in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\includes\class-ckn-api.php on line 66
 [15-Feb-2025 13:43:30 UTC] PHP Parse error:  syntax error, unexpected token "}" in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\cool-kids-network.php on line 36
 [15-Feb-2025 13:44:08 UTC] PHP Parse error:  syntax error, unexpected token "}" in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\cool-kids-network\cool-kids-network.php on line 36
+[15-Feb-2025 14:20:44 UTC] PHP Warning:  Attempt to read property "title" on null in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\class-wp-customize-widgets.php on line 923
+[16-Feb-2025 13:17:46 UTC] PHP Fatal error:  Uncaught Exception: Invalid post. in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\elementor\core\settings\page\manager.php:101
+Stack trace:
+#0 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\elementor\core\base\document.php(1793): Elementor\Core\Settings\Page\Manager->ajax_before_save_settings(Array, NULL)
+#1 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\elementor\core\base\document.php(911): Elementor\Core\Base\Document->save_settings(Array)
+#2 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\elementor\core\kits\manager.php(295): Elementor\Core\Base\Document->update_settings(Array)
+#3 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\elementor\core\kits\manager.php(464): Elementor\Core\Kits\Manager->update_kit_settings_based_on_option('site_name', 'Plugin Check')
+#4 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\class-wp-hook.php(326): Elementor\Core\Kits\Manager->Elementor\Core\Kits\{closure}('My Site', 'Plugin Check')
+#5 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\option.php(1011): do_action('update_option_b...', 'My Site', 'Plugin Check', 'blogname')
+#8 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-admin\includes\upgrade.php(73): update_option('blogname', 'Plugin Check')
+#9 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\plugin-check\includes\Checker\Runtime_Environment_Setup.php(263): wp_install('Plugin Check', 'plugincheck', 'demo@pluginchec...', false)
+#10 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\plugin-check\includes\Checker\Runtime_Environment_Setup.php(75): WordPress\Plugin_Check\Checker\Runtime_Environment_Setup->install_wordpress('http://cool-kid...', 'hello-elementor', Array)
+#11 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\plugin-check\includes\Admin\Admin_AJAX.php(131): WordPress\Plugin_Check\Checker\Runtime_Environment_Setup->set_up()
+#12 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\class-wp-hook.php(324): WordPress\Plugin_Check\Admin\Admin_AJAX->set_up_environment('')
+#13 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-admin\admin-ajax.php(192): do_action('wp_ajax_plugin_...')
+#16 {main}
+  thrown in D:\Nepweb Tech\Local Sites\cool-kids-network\app\public\wp-content\plugins\elementor\core\settings\page\manager.php on line 101

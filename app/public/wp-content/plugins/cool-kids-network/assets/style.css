@@ -1,11 +1,20 @@
+.ckn-form{
+    display: flex;
+}
+
+.user-list-cont{
+    margin-top: 40px;
+}
 .user-list {
-    display: grid;
+    display: flex;
     gap: 1rem;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .user-card {
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 8px;
+    flex: 0 0 30%;
 }

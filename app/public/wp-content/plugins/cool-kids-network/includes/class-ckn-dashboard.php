@@ -32,7 +32,12 @@ class CKN_Dashboard
 
         if (current_user_can('read_others_data') || current_user_can('read_all_data')) {
 
-            $users = get_users();
+            $users = get_users([
+                'exclude' => get_users([
+                    'role' => 'administrator',
+                    'fields' => 'ID'
+                ])
+            ]);
             ob_start();
             echo '<div class="user-list-cont">';
             echo '<h2>Other Users</h2>';
